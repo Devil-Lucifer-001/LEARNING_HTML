@@ -1,0 +1,176 @@
+HTML Notes
+Introduction to HTML
+HTML (HyperText Markup Language) is the standard language used to create web pages. It defines the structure of a webpage using various elements and tags. HTML documents are made up of a series of elements that describe the content and structure of the page.
+
+1. Basic Structure of an HTML Document
+Every HTML document has a basic structure that consists of the following:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+</head>
+<body>
+    <!-- Content goes here -->
+</body>
+</html>
+<!DOCTYPE html>: Declares the document type and version of HTML.
+<html>: The root element that contains all other HTML elements.
+<head>: Contains metadata about the document, such as the title and links to stylesheets or scripts.
+<body>: Contains the content of the webpage, which is visible to users.
+2. HTML Elements and Tags
+HTML is built using elements, which consist of:
+
+Opening Tag: Indicates the start of an element (e.g., <p>).
+Content: The text or elements contained within the tags.
+Closing Tag: Indicates the end of an element (e.g., </p>).
+Example of an HTML Element
+html
+Copy code
+<p>This is a paragraph.</p>
+3. Common HTML Tags
+3.1 Headings
+Headings are defined using <h1> to <h6> tags, with <h1> being the highest level and <h6> the lowest.
+
+html
+Copy code
+<h1>This is a heading 1</h1>
+<h2>This is a heading 2</h2>
+<h3>This is a heading 3</h3>
+3.2 Paragraphs
+The <p> tag is used to define paragraphs.
+
+html
+Copy code
+<p>This is a paragraph.</p>
+3.3 Links
+Links are created using the <a> (anchor) tag, with the href attribute specifying the URL.
+
+html
+Copy code
+<a href="https://www.example.com">Visit Example</a>
+3.4 Images
+Images are embedded using the <img> tag, with the src attribute pointing to the image location.
+
+html
+Copy code
+<img src="image.jpg" alt="Description of image" width="300" height="200">
+3.5 Lists
+HTML supports two types of lists:
+
+Unordered Lists: Created with the <ul> tag, using <li> for list items.
+html
+Copy code
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+Ordered Lists: Created with the <ol> tag.
+html
+Copy code
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+</ol>
+4. Attributes
+Attributes provide additional information about HTML elements. They are included in the opening tag and usually come in name/value pairs.
+
+Example of Attributes
+html
+Copy code
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+href: Specifies the URL of the link.
+target: Specifies where to open the linked document (e.g., _blank opens in a new tab).
+5. Multimedia Elements
+HTML allows for the inclusion of multimedia elements such as audio and video.
+
+5.1 Audio
+To include audio, use the <audio> tag with the controls attribute to display playback controls.
+
+html
+Copy code
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+5.2 Video
+For video content, use the <video> tag.
+
+html
+Copy code
+<video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+6. Tables
+Tables are created using the <table> tag, with <tr> for rows, <th> for headers, and <td> for data cells.
+
+html
+Copy code
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>30</td>
+    </tr>
+</table>
+7. Forms
+Forms are used to collect user input and are defined using the <form> tag. Key elements include:
+
+Input Fields: Various types of input fields can be created using the <input> tag.
+html
+Copy code
+<form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Submit">
+</form>
+8. Semantic HTML
+Semantic HTML uses HTML elements that clearly describe their meaning to both the browser and the developer. This improves accessibility and SEO.
+
+Common semantic elements include:
+
+<header>: Represents introductory content or navigational links.
+<nav>: Defines a set of navigation links.
+<article>: Represents a self-contained piece of content.
+<section>: Represents a thematic grouping of content.
+<footer>: Represents footer content.
+9. HTML Entities
+HTML entities are special characters that can be displayed in HTML code. For example:
+
+&lt; for <
+&gt; for >
+&amp; for &
+10. HTML5 Features
+HTML5 introduced several new features and improvements:
+
+Audio and Video: Native support for multimedia elements without requiring plugins.
+Canvas: The <canvas> element allows for dynamic, scriptable rendering of 2D shapes and bitmap images.
+Local Storage: Web storage for storing data on the client side.
+Geolocation: Access to the geographical location of the user.
+11. Best Practices
+Use Semantic Elements: Always prefer semantic HTML for better accessibility and SEO.
+Validate HTML: Use validators to check for errors in your HTML code.
+Use Comments: Document your code with comments for better understanding.
+html
+Copy code
+<!-- This is a comment -->
+12. Conclusion
+HTML is a foundational technology for web development. Understanding HTML is crucial for creating well-structured and accessible web pages. As you progress in your web development journey, you'll combine HTML with CSS and JavaScript to build dynamic and interactive websites.
+
+Additional Resources
+Mozilla Developer Network (MDN) Web Docs
+W3Schools HTML Tutorial
+HTML Living Standard
+This concludes the notes on HTML. Keep experimenting with different tags and attributes as you build your web projects!
+
+
+
+
