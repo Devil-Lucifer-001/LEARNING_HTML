@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="C:\Users\LENOVO\Desktop\ProgrammingLangues\CSS\INDEX.css">
+        <body>
+            <form action="/submit.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="email" required="true">
+                <br><hr>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" placeholder="Necessary" required="true">
+                <br><hr>
+                <label for="date">Date:</label>
+                <input type="date" id="date" placeholder="Necessary" required="true">
+                <br><hr>
+                <label for="time">Time:</label>
+                <input type="time" id="time" placeholder="Necessary" required="true">
+                <br><hr>
+                <label for="file">File:</label>
+                <input type="file" id="file" placeholder="Necessary" required="true">
+                <br><hr>
+                <label for="color">Color:</label>
+                <input type="color" id="color" placeholder="Necessary" required="true">
+                <br><hr>
+                <label for="range">Range:</label>
+                <input type="range" id="range" placeholder="Necessary" required="true">
+                <br><hr>
+                <label for="button">Button:</label>
+                <input type="button" id="button" value="Click">
+                <br><hr>
+                <h1>Select Gender</h1>
+                <label for="gender">Male</label>
+                <input type="radio" id="gender" placeholder="Necessary" required="true" name="gender">
+                <br>
+                <label for="gender">Female</label>
+                <input type="radio" id="gender" placeholder="Necessary" required="true" name="gender">
+                <br>
+                <label for="gender">Other</label>
+                <input type="radio" id="gender" placeholder="Necessary" required="true" name="gender">
+                <br><hr>
+                <h1>Select Language</h1>
+                <label for="lang">Python</label>
+                <input type="checkbox" id="lang" placeholder="Necessary" required="true" name="Language">
+                <br>
+                <label for="lang">CSS</label>
+                <input type="checkbox" id="lang" placeholder="Necessary" required="true" name="Language">
+                <br>
+                <label for="lang">HTML</label>
+                <input type="checkbox" id="lang" placeholder="Necessary" required="true" name="Language">
+                <br><hr>
+                <label for="fruits">Select a fruit:</label>
+                <select id="fruits" name="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                    <option value="date">Date</option>
+                    <option value="grape">Grape</option>
+                </select>
+                <br><hr>
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+                <br><hr>
+                <iframe src="https://www.wikipedia.org" title="Example Website">
+                    Your browser does not support iframes.
+                </iframe>
+                <br><hr>
+                <input type="submit" value="submit">
+                <hr> 
+            </form>
+        </body>
+    </head>
+</html>
