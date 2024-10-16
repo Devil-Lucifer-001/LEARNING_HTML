@@ -2,72 +2,80 @@
 <html>
     <head>
         <title>Form</title>
-        <link rel="stylesheet" href="C:\Users\LENOVO\Desktop\ProgrammingLangues\CSS\INDEX.css">
-        <body>
-            <form action="/submit.php" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" placeholder="email" required="true">
-                <br><hr>
-                <label for="pwd">Password:</label>
-                <input type="password" id="pwd" placeholder="Necessary" required="true">
-                <br><hr>
-                <label for="date">Date:</label>
-                <input type="date" id="date" placeholder="Necessary" required="true">
-                <br><hr>
-                <label for="time">Time:</label>
-                <input type="time" id="time" placeholder="Necessary" required="true">
-                <br><hr>
-                <label for="file">File:</label>
-                <input type="file" id="file" placeholder="Necessary" required="true">
-                <br><hr>
-                <label for="color">Color:</label>
-                <input type="color" id="color" placeholder="Necessary" required="true">
-                <br><hr>
-                <label for="range">Range:</label>
-                <input type="range" id="range" placeholder="Necessary" required="true">
-                <br><hr>
-                <label for="button">Button:</label>
-                <input type="button" id="button" value="Click">
-                <br><hr>
-                <h1>Select Gender</h1>
-                <label for="gender">Male</label>
-                <input type="radio" id="gender" placeholder="Necessary" required="true" name="gender">
-                <br>
-                <label for="gender">Female</label>
-                <input type="radio" id="gender" placeholder="Necessary" required="true" name="gender">
-                <br>
-                <label for="gender">Other</label>
-                <input type="radio" id="gender" placeholder="Necessary" required="true" name="gender">
-                <br><hr>
-                <h1>Select Language</h1>
-                <label for="lang">Python</label>
-                <input type="checkbox" id="lang" placeholder="Necessary" required="true" name="Language">
-                <br>
-                <label for="lang">CSS</label>
-                <input type="checkbox" id="lang" placeholder="Necessary" required="true" name="Language">
-                <br>
-                <label for="lang">HTML</label>
-                <input type="checkbox" id="lang" placeholder="Necessary" required="true" name="Language">
-                <br><hr>
-                <label for="fruits">Select a fruit:</label>
-                <select id="fruits" name="fruits">
-                    <option value="apple">Apple</option>
-                    <option value="banana">Banana</option>
-                    <option value="cherry">Cherry</option>
-                    <option value="date">Date</option>
-                    <option value="grape">Grape</option>
-                </select>
-                <br><hr>
-                <label for="feedback">Your Feedback:</label>
-                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
-                <br><hr>
-                <iframe src="https://www.wikipedia.org" title="Example Website">
-                    Your browser does not support iframes.
-                </iframe>
-                <br><hr>
-                <input type="submit" value="submit">
-                <hr> 
-            </form>
-        </body>
     </head>
+    <body>
+        <form action="/submit.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Email" required>
+            <br><hr>
+            
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" placeholder="Necessary" required>
+            <br><hr>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <br><hr>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+            <br><hr>
+            
+            <label for="file">File:</label>
+            <input type="file" id="file" required>
+            <br><hr>
+            
+            <label for="color">Color:</label>
+            <input type="color" id="color" required>
+            <br><hr>
+            
+            <label for="range">Range:</label>
+            <input type="range" id="range" required>
+            <br><hr>
+            
+            <h1>Select Gender</h1>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <br><hr>
+            
+            <h1>Select Language</h1>
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="language" value="Python">
+            <br>
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css" name="language" value="CSS">
+            <br>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="language" value="HTML">
+            <br><hr>
+            
+            <label for="fruits">Select a fruit:</label>
+            <select id="fruits" name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+                <option value="date">Date</option>
+                <option value="grape">Grape</option>
+            </select>
+            <br><hr>
+            
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+            <br><hr>
+            
+            <iframe src="https://www.wikipedia.org" title="Example Website" width="600" height="400">
+                Your browser does not support iframes.
+            </iframe>
+            <br><hr>
+            
+            <input type="submit" value="Submit">
+            <hr> 
+        </form>
+    </body>
 </html>
